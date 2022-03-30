@@ -1,15 +1,16 @@
 package com.pulsara.springbootjenkins;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import javax.annotation.PostConstruct;
-import java.util.logging.Logger;
 
 @SpringBootApplication
 public class SpringBootJenkinsApplication {
 
-    public static Logger log = Logger.getLogger(SpringBootJenkinsApplication.class.getName());
+    public static Logger log = LoggerFactory.getLogger(SpringBootJenkinsApplication.class.getName());
 
     @PostConstruct
     public void init() {
