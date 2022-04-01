@@ -20,7 +20,7 @@ class SpringBootJenkinsApplicationTests {
     void contextLoads() {
 
         log.info("Test case executing...");
-        log.info("Test case completed");
+        log.info("second log statement");
         assertEquals(true,true);
     }
 
